@@ -1,0 +1,80 @@
+{
+  "provenance": "Five implementation-authored educational notes, not published academic papers; seven authored diagnostic queries. CC0 fixture text. Filenames are fixture metadata, not claims that files were uploaded. Page metadata validity is tested separately using actual generated PDF bytes.",
+  "chunks": [
+    {
+      "id": "dropout:1",
+      "document": "authored_dropout_notes.pdf",
+      "page": 1,
+      "title": "Authored methods notes",
+      "text": "Dropout randomly masks neural network activations during training. During evaluation masking is disabled. This regularization technique was studied by Srivastava and colleagues in 2014."
+    },
+    {
+      "id": "pca:1",
+      "document": "authored_pca_notes.pdf",
+      "page": 1,
+      "title": "Authored methods notes",
+      "text": "Principal component analysis uses centered data and orthogonal directions of maximum variance. Singular value decomposition provides principal components and explained variance."
+    },
+    {
+      "id": "retrieval:2",
+      "document": "authored_retrieval_notes.pdf",
+      "page": 2,
+      "title": "Authored methods notes",
+      "text": "BM25 is a lexical retrieval scoring method. It combines inverse document frequency with saturated term frequency and document length normalization."
+    },
+    {
+      "id": "splits:1",
+      "document": "authored_splits_notes.pdf",
+      "page": 1,
+      "title": "Authored methods notes",
+      "text": "A held out test split estimates performance after model selection. Hyperparameters are selected using training and validation data, not the held out test split."
+    },
+    {
+      "id": "decay:1",
+      "document": "authored_decay_notes.pdf",
+      "page": 1,
+      "title": "Authored methods notes",
+      "text": "Weight decay penalizes large parameter magnitudes. Decoupled weight decay in AdamW separates the decay update from the adaptive gradient update."
+    }
+  ],
+  "questions": [
+    {
+      "question": "How does dropout mask activations during training?",
+      "evidence": [
+        "dropout:1"
+      ]
+    },
+    {
+      "question": "What provides PCA principal components and explained variance?",
+      "evidence": [
+        "pca:1"
+      ]
+    },
+    {
+      "question": "How does BM25 normalize document length and term frequency?",
+      "evidence": [
+        "retrieval:2"
+      ]
+    },
+    {
+      "question": "Which data split selects hyperparameters?",
+      "evidence": [
+        "splits:1"
+      ]
+    },
+    {
+      "question": "How does AdamW apply decoupled weight decay?",
+      "evidence": [
+        "decay:1"
+      ]
+    },
+    {
+      "question": "What is the orbital period of Neptune?",
+      "evidence": []
+    },
+    {
+      "question": "Which clinical drug cures malaria?",
+      "evidence": []
+    }
+  ]
+}

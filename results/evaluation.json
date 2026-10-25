@@ -1,0 +1,484 @@
+{
+  "corpus": "Five implementation-authored educational notes, not published academic papers; seven authored diagnostic queries. CC0 fixture text. Filenames are fixture metadata, not claims that files were uploaded. Page metadata validity is tested separately using actual generated PDF bytes.",
+  "backend": "lexical-hash",
+  "semantic_model_executed": false,
+  "results": {
+    "bm25": {
+      "recall_at_3": 1.0,
+      "mrr_at_3": 1.0,
+      "evidence_coverage": 1.0,
+      "citation_validity": true,
+      "abstention_accuracy": 1.0,
+      "mean_latency_seconds": 0.0005914845714382214,
+      "queries": [
+        {
+          "question": "How does dropout mask activations during training?",
+          "answerable": true,
+          "recall_at_3": 1.0,
+          "reciprocal_rank": 1.0,
+          "evidence_coverage": 1.0,
+          "citation_validity": true,
+          "abstained": false,
+          "abstention_correct": true,
+          "latency_seconds": 0.0012481509999133777,
+          "retrieved": [
+            "dropout:1",
+            "splits:1",
+            "pca:1"
+          ],
+          "citations": [
+            {
+              "chunk_id": "dropout:1",
+              "document": "authored_dropout_notes.pdf",
+              "page": 1
+            }
+          ]
+        },
+        {
+          "question": "What provides PCA principal components and explained variance?",
+          "answerable": true,
+          "recall_at_3": 1.0,
+          "reciprocal_rank": 1.0,
+          "evidence_coverage": 1.0,
+          "citation_validity": true,
+          "abstained": false,
+          "abstention_correct": true,
+          "latency_seconds": 0.0007731560000365789,
+          "retrieved": [
+            "pca:1",
+            "dropout:1",
+            "retrieval:2"
+          ],
+          "citations": [
+            {
+              "chunk_id": "pca:1",
+              "document": "authored_pca_notes.pdf",
+              "page": 1
+            }
+          ]
+        },
+        {
+          "question": "How does BM25 normalize document length and term frequency?",
+          "answerable": true,
+          "recall_at_3": 1.0,
+          "reciprocal_rank": 1.0,
+          "evidence_coverage": 1.0,
+          "citation_validity": true,
+          "abstained": false,
+          "abstention_correct": true,
+          "latency_seconds": 0.0006100900000092224,
+          "retrieved": [
+            "retrieval:2",
+            "dropout:1",
+            "pca:1"
+          ],
+          "citations": [
+            {
+              "chunk_id": "retrieval:2",
+              "document": "authored_retrieval_notes.pdf",
+              "page": 2
+            }
+          ]
+        },
+        {
+          "question": "Which data split selects hyperparameters?",
+          "answerable": true,
+          "recall_at_3": 1.0,
+          "reciprocal_rank": 1.0,
+          "evidence_coverage": 1.0,
+          "citation_validity": true,
+          "abstained": false,
+          "abstention_correct": true,
+          "latency_seconds": 0.00048006399993028026,
+          "retrieved": [
+            "splits:1",
+            "pca:1",
+            "dropout:1"
+          ],
+          "citations": [
+            {
+              "chunk_id": "splits:1",
+              "document": "authored_splits_notes.pdf",
+              "page": 1
+            }
+          ]
+        },
+        {
+          "question": "How does AdamW apply decoupled weight decay?",
+          "answerable": true,
+          "recall_at_3": 1.0,
+          "reciprocal_rank": 1.0,
+          "evidence_coverage": 1.0,
+          "citation_validity": true,
+          "abstained": false,
+          "abstention_correct": true,
+          "latency_seconds": 0.0003445290000172463,
+          "retrieved": [
+            "decay:1",
+            "dropout:1",
+            "pca:1"
+          ],
+          "citations": [
+            {
+              "chunk_id": "decay:1",
+              "document": "authored_decay_notes.pdf",
+              "page": 1
+            }
+          ]
+        },
+        {
+          "question": "What is the orbital period of Neptune?",
+          "answerable": false,
+          "recall_at_3": null,
+          "reciprocal_rank": 0,
+          "evidence_coverage": null,
+          "citation_validity": true,
+          "abstained": true,
+          "abstention_correct": true,
+          "latency_seconds": 0.00037212100005490356,
+          "retrieved": [
+            "dropout:1",
+            "pca:1",
+            "retrieval:2"
+          ],
+          "citations": []
+        },
+        {
+          "question": "Which clinical drug cures malaria?",
+          "answerable": false,
+          "recall_at_3": null,
+          "reciprocal_rank": 0,
+          "evidence_coverage": null,
+          "citation_validity": true,
+          "abstained": true,
+          "abstention_correct": true,
+          "latency_seconds": 0.0003122810001059406,
+          "retrieved": [
+            "dropout:1",
+            "pca:1",
+            "retrieval:2"
+          ],
+          "citations": []
+        }
+      ]
+    },
+    "dense": {
+      "recall_at_3": 1.0,
+      "mrr_at_3": 1.0,
+      "evidence_coverage": 1.0,
+      "citation_validity": true,
+      "abstention_accuracy": 1.0,
+      "mean_latency_seconds": 0.00038485714289241253,
+      "queries": [
+        {
+          "question": "How does dropout mask activations during training?",
+          "answerable": true,
+          "recall_at_3": 1.0,
+          "reciprocal_rank": 1.0,
+          "evidence_coverage": 1.0,
+          "citation_validity": true,
+          "abstained": false,
+          "abstention_correct": true,
+          "latency_seconds": 0.0004022660000373435,
+          "retrieved": [
+            "dropout:1",
+            "splits:1",
+            "pca:1"
+          ],
+          "citations": [
+            {
+              "chunk_id": "dropout:1",
+              "document": "authored_dropout_notes.pdf",
+              "page": 1
+            }
+          ]
+        },
+        {
+          "question": "What provides PCA principal components and explained variance?",
+          "answerable": true,
+          "recall_at_3": 1.0,
+          "reciprocal_rank": 1.0,
+          "evidence_coverage": 1.0,
+          "citation_validity": true,
+          "abstained": false,
+          "abstention_correct": true,
+          "latency_seconds": 0.0006992739999986952,
+          "retrieved": [
+            "pca:1",
+            "retrieval:2",
+            "dropout:1"
+          ],
+          "citations": [
+            {
+              "chunk_id": "pca:1",
+              "document": "authored_pca_notes.pdf",
+              "page": 1
+            }
+          ]
+        },
+        {
+          "question": "How does BM25 normalize document length and term frequency?",
+          "answerable": true,
+          "recall_at_3": 1.0,
+          "reciprocal_rank": 1.0,
+          "evidence_coverage": 1.0,
+          "citation_validity": true,
+          "abstained": false,
+          "abstention_correct": true,
+          "latency_seconds": 0.0003925019999542201,
+          "retrieved": [
+            "retrieval:2",
+            "pca:1",
+            "splits:1"
+          ],
+          "citations": [
+            {
+              "chunk_id": "retrieval:2",
+              "document": "authored_retrieval_notes.pdf",
+              "page": 2
+            }
+          ]
+        },
+        {
+          "question": "Which data split selects hyperparameters?",
+          "answerable": true,
+          "recall_at_3": 1.0,
+          "reciprocal_rank": 1.0,
+          "evidence_coverage": 1.0,
+          "citation_validity": true,
+          "abstained": false,
+          "abstention_correct": true,
+          "latency_seconds": 0.00039191000007576804,
+          "retrieved": [
+            "splits:1",
+            "pca:1",
+            "dropout:1"
+          ],
+          "citations": [
+            {
+              "chunk_id": "splits:1",
+              "document": "authored_splits_notes.pdf",
+              "page": 1
+            }
+          ]
+        },
+        {
+          "question": "How does AdamW apply decoupled weight decay?",
+          "answerable": true,
+          "recall_at_3": 1.0,
+          "reciprocal_rank": 1.0,
+          "evidence_coverage": 1.0,
+          "citation_validity": true,
+          "abstained": false,
+          "abstention_correct": true,
+          "latency_seconds": 0.00030016200003046833,
+          "retrieved": [
+            "decay:1",
+            "retrieval:2",
+            "dropout:1"
+          ],
+          "citations": [
+            {
+              "chunk_id": "decay:1",
+              "document": "authored_decay_notes.pdf",
+              "page": 1
+            }
+          ]
+        },
+        {
+          "question": "What is the orbital period of Neptune?",
+          "answerable": false,
+          "recall_at_3": null,
+          "reciprocal_rank": 0,
+          "evidence_coverage": null,
+          "citation_validity": true,
+          "abstained": true,
+          "abstention_correct": true,
+          "latency_seconds": 0.00026053300007333746,
+          "retrieved": [
+            "decay:1",
+            "retrieval:2",
+            "dropout:1"
+          ],
+          "citations": []
+        },
+        {
+          "question": "Which clinical drug cures malaria?",
+          "answerable": false,
+          "recall_at_3": null,
+          "reciprocal_rank": 0,
+          "evidence_coverage": null,
+          "citation_validity": true,
+          "abstained": true,
+          "abstention_correct": true,
+          "latency_seconds": 0.0002473530000770552,
+          "retrieved": [
+            "pca:1",
+            "dropout:1",
+            "retrieval:2"
+          ],
+          "citations": []
+        }
+      ]
+    },
+    "hybrid": {
+      "recall_at_3": 1.0,
+      "mrr_at_3": 1.0,
+      "evidence_coverage": 1.0,
+      "citation_validity": true,
+      "abstention_accuracy": 1.0,
+      "mean_latency_seconds": 0.00040118442856445266,
+      "queries": [
+        {
+          "question": "How does dropout mask activations during training?",
+          "answerable": true,
+          "recall_at_3": 1.0,
+          "reciprocal_rank": 1.0,
+          "evidence_coverage": 1.0,
+          "citation_validity": true,
+          "abstained": false,
+          "abstention_correct": true,
+          "latency_seconds": 0.0003080049999653056,
+          "retrieved": [
+            "dropout:1",
+            "splits:1",
+            "pca:1"
+          ],
+          "citations": [
+            {
+              "chunk_id": "dropout:1",
+              "document": "authored_dropout_notes.pdf",
+              "page": 1
+            }
+          ]
+        },
+        {
+          "question": "What provides PCA principal components and explained variance?",
+          "answerable": true,
+          "recall_at_3": 1.0,
+          "reciprocal_rank": 1.0,
+          "evidence_coverage": 1.0,
+          "citation_validity": true,
+          "abstained": false,
+          "abstention_correct": true,
+          "latency_seconds": 0.00027812899998025387,
+          "retrieved": [
+            "pca:1",
+            "dropout:1",
+            "retrieval:2"
+          ],
+          "citations": [
+            {
+              "chunk_id": "pca:1",
+              "document": "authored_pca_notes.pdf",
+              "page": 1
+            }
+          ]
+        },
+        {
+          "question": "How does BM25 normalize document length and term frequency?",
+          "answerable": true,
+          "recall_at_3": 1.0,
+          "reciprocal_rank": 1.0,
+          "evidence_coverage": 1.0,
+          "citation_validity": true,
+          "abstained": false,
+          "abstention_correct": true,
+          "latency_seconds": 0.00045669799999359384,
+          "retrieved": [
+            "retrieval:2",
+            "pca:1",
+            "dropout:1"
+          ],
+          "citations": [
+            {
+              "chunk_id": "retrieval:2",
+              "document": "authored_retrieval_notes.pdf",
+              "page": 2
+            }
+          ]
+        },
+        {
+          "question": "Which data split selects hyperparameters?",
+          "answerable": true,
+          "recall_at_3": 1.0,
+          "reciprocal_rank": 1.0,
+          "evidence_coverage": 1.0,
+          "citation_validity": true,
+          "abstained": false,
+          "abstention_correct": true,
+          "latency_seconds": 0.0006163780000179031,
+          "retrieved": [
+            "splits:1",
+            "pca:1",
+            "dropout:1"
+          ],
+          "citations": [
+            {
+              "chunk_id": "splits:1",
+              "document": "authored_splits_notes.pdf",
+              "page": 1
+            }
+          ]
+        },
+        {
+          "question": "How does AdamW apply decoupled weight decay?",
+          "answerable": true,
+          "recall_at_3": 1.0,
+          "reciprocal_rank": 1.0,
+          "evidence_coverage": 1.0,
+          "citation_validity": true,
+          "abstained": false,
+          "abstention_correct": true,
+          "latency_seconds": 0.0002919600000268474,
+          "retrieved": [
+            "decay:1",
+            "dropout:1",
+            "retrieval:2"
+          ],
+          "citations": [
+            {
+              "chunk_id": "decay:1",
+              "document": "authored_decay_notes.pdf",
+              "page": 1
+            }
+          ]
+        },
+        {
+          "question": "What is the orbital period of Neptune?",
+          "answerable": false,
+          "recall_at_3": null,
+          "reciprocal_rank": 0,
+          "evidence_coverage": null,
+          "citation_validity": true,
+          "abstained": true,
+          "abstention_correct": true,
+          "latency_seconds": 0.00044140499994682614,
+          "retrieved": [
+            "dropout:1",
+            "retrieval:2",
+            "decay:1"
+          ],
+          "citations": []
+        },
+        {
+          "question": "Which clinical drug cures malaria?",
+          "answerable": false,
+          "recall_at_3": null,
+          "reciprocal_rank": 0,
+          "evidence_coverage": null,
+          "citation_validity": true,
+          "abstained": true,
+          "abstention_correct": true,
+          "latency_seconds": 0.0004157160000204385,
+          "retrieved": [
+            "dropout:1",
+            "pca:1",
+            "retrieval:2"
+          ],
+          "citations": []
+        }
+      ]
+    }
+  }
+}
