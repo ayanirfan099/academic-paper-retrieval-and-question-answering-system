@@ -39,7 +39,7 @@ STOP = {
 }
 
 
-def tokens(text):
+def tokens(text: str) -> list[str]:
     return [t for t in re.findall(r"\b\w+\b", text.lower()) if t not in STOP]
 
 
@@ -111,14 +111,14 @@ class EvidenceIndex:
         else:
             self.encoder = HashingVectorizer(n_features=1024, alternate_sign=False, norm="l2")
 
-    def embed(self, texts):
+    def embed(self, texts: list[str]) -> np.ndarray:
         if self.backend == "sentence-transformer":
             z = self.encoder.encode(texts, normalize_embeddings=True, convert_to_numpy=True)
         else:
             z = self.encoder.transform(texts).toarray()
         return np.ascontiguousarray(z, dtype="float32")
 
-    def add(self, chunks):
+    def add(self, chunks: list[Chunk]) -> None:
         if not chunks:
             raise ValueError("No chunks")
         seen = {c.id for c in self.chunks}
@@ -142,7 +142,7 @@ class EvidenceIndex:
         self.index = faiss.IndexFlatIP(z.shape[1])
         self.index.add(z)
 
-    def search(self, query, strategy="hybrid", k=5):
+    def search(self, query: str, strategy: str = "hybrid", k: int = 5) -> list[dict]:
         if not self.chunks:
             raise ValueError("Index documents first")
         if not query.strip() or len(query) > 2000:
@@ -181,7 +181,7 @@ class EvidenceIndex:
             for i in ranking
         ]
 
-    def answer(self, query, strategy="hybrid", k=3):
+    def answer(self, query: str, strategy: str = "hybrid", k: int = 3) -> dict:
         hits = self.search(query, strategy, k)
         # Lexical support gate is intentionally conservative and visible, not a probability.
         terms = set(tokens(query))

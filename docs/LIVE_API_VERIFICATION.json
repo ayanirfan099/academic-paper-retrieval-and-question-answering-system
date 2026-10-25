@@ -1,0 +1,37 @@
+{
+  "health": {
+    "status": "ok",
+    "chunks": 0,
+    "backend": "lexical-hash"
+  },
+  "upload": {
+    "added_chunks": 1,
+    "total_chunks": 1
+  },
+  "answer": {
+    "answer": "[1] Dropout masks activations during training.",
+    "abstained": false,
+    "citations": [
+      {
+        "chunk_id": "a58539e810c9a254:1:0",
+        "document": "notes.pdf",
+        "page": 1
+      }
+    ],
+    "evidence": [
+      {
+        "chunk": {
+          "id": "a58539e810c9a254:1:0",
+          "document": "notes.pdf",
+          "page": 1,
+          "text": "Dropout masks activations during training.",
+          "title": ""
+        },
+        "score": 0.03278688524590164,
+        "bm25": 0.5753641449033315,
+        "similarity": 0.3999999761581421
+      }
+    ],
+    "backend": "lexical-hash"
+  }
+}

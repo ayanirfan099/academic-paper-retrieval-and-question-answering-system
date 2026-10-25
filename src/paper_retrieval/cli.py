@@ -71,7 +71,7 @@ def evaluate(corpus, output, backend="lexical-hash"):
     return report
 
 
-def main():
+def main() -> None:
     p = argparse.ArgumentParser()
     p.add_argument("--corpus", default="experiments/evaluation.json")
     p.add_argument("--output", default="results/evaluation.json")

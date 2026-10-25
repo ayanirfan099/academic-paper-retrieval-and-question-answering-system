@@ -9,3 +9,5 @@ Five pytest tests passed: actual generated PDF extraction/chunking and page prov
 No scientific paper corpus benchmark or downloaded semantic embeddings executed because Hugging Face access is blocked. Authored notes are tiny and queries share vocabulary. Citation validity checks provenance consistency, not entailment or truth. Lexical abstention can reject paraphrases and accept superficially related passages. No OCR, persistent database, authentication, multitenancy or resource-isolated hostile PDF parser. PDF page text bound is checked after extraction; deploy with process isolation before accepting hostile internet uploads. Local research app only. In-memory index rebuilds all vectors on upload and is not designed for large corpora. Do not expose API publicly as a production service.
 
 Exact commands: [reproducibility](reproducibility.md). Push status and commit identity are recorded in the portfolio summary; remote CI success is not implied.
+
+Additional live service verification: uvicorn started on loopback; real HTTP health request, PDF upload, answer retrieval and page-1 citation passed. Only the verification process was stopped afterward.
