@@ -1,4 +1,4 @@
-# Page-aware paper retrieval and evidence-based answers
+# Paper Evidence Retrieval with Page Citations
 
 An offline-capable PDF retrieval application with BM25, FAISS vector search, reciprocal rank fusion, page citations and conservative extractive responses. FastAPI and Streamlit interfaces operate without paid APIs or language models.
 
